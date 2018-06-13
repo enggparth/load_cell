@@ -1,0 +1,18 @@
+---------------------------------------------------------------------------
+NCDrill File Report For: openScale_v02.PcbDoc   6/6/2018  2:58:26 PM
+---------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII RoundHoles File : openScale_v02.TXT
+EIA File   : openScale_v02.DRL
+
+Tool         Hole Size           Hole Type     Hole Count Plated       Tool Travel
+---------------------------------------------------------------------------
+T1        0.5mm (19.685mil)        Round          78               7531.18 mm (296.50 Inch)
+T2        1mm (39.37mil)           Round          18               7302.42 mm (287.50 Inch)
+T3        1.2mm (47.244mil)        Round          4                7207.57 mm (283.76 Inch)
+T4        3mm (118.11mil)          Round          4                7318.72 mm (288.14 Inch)
+---------------------------------------------------------------------------
+Totals                                            104              29359.89 mm (1155.90 Inch)
+
+Total Processing Time (hh:mm:ss) : 00:00:01
