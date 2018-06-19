@@ -74,12 +74,27 @@ def door_lock_3():
     print("Door 4 opened")
 
 def led_strip_1():
+    GPIO.output(LED_STRIP[0], GPIO.HIGH)
+    time.sleep(sleep_led)
+    GPIO.output(LED_STRIP[0], GPIO.LOW)
+    time.sleep(sleep_led)
+    
+def led_strip_2():
+    GPIO.output(LED_STRIP[1], GPIO.HIGH)
+    time.sleep(sleep_led)
+    GPIO.output(LED_STRIP[1], GPIO.LOW)
+    time.sleep(sleep_led)
+    
+def led_strip_3():
+    GPIO.output(LED_STRIP[2], GPIO.HIGH)
+    time.sleep(sleep_led)
+    GPIO.output(LED_STRIP[2], GPIO.LOW)
+    time.sleep(sleep_led)
+def led_strip_4():
     GPIO.output(LED_STRIP[3], GPIO.HIGH)
     time.sleep(sleep_led)
     GPIO.output(LED_STRIP[3], GPIO.LOW)
     time.sleep(sleep_led)
-    
-    
 #Main prg to open door
 try:
     
@@ -103,11 +118,11 @@ try:
             
             
     elif sys.argv[1]== "2":
-        door_lock_1()
+        door_lock_2()
         for i in range (0,5):
                     led_strip_1()
     elif sys.argv[1]== "3":
-        door_lock_2()
+        door_lock_3()
         for i in range (0,5):
                     led_strip_1()
     elif sys.argv[1]== "4":
