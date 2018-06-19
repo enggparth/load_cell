@@ -5,7 +5,7 @@ import sys
 import os
 
 
-FB_LOCK[4] = {6,13,19,26};
+FB_LOCK = [6,13,19,26]
 
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(FB_LOCK[0],GPIO.IN,pull_up_down=GPIO.PUD_UP)
@@ -26,7 +26,8 @@ try:
 		elif GPIO.input(FB_LOCK[3]):
 			print("LOCK 4 feedback received")
    
-except KeyboardInterrupt:  
+except KeyboardInterrupt:
+    print("over")
     
 finally:  
-    GPIO.cleanup() # this ensures a clean exit  
+    GPIO.cleanup() # this ensures a clean exit  :wq
