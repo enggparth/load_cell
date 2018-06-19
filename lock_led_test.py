@@ -118,17 +118,17 @@ try:
             
             
     elif sys.argv[1]== "2":
+        door_lock_1()
+        for i in range (0,5):
+                    led_strip_2()
+    elif sys.argv[1]== "3":
         door_lock_2()
         for i in range (0,5):
-                    led_strip_1()
-    elif sys.argv[1]== "3":
-        door_lock_3()
-        for i in range (0,5):
-                    led_strip_1()
+                    led_strip_3()
     elif sys.argv[1]== "4":
         door_lock_3()
         for i in range (0,5):
-                    led_strip_1()
+                    led_strip_4()
     elif sys.argv[1] == "fb":
         while True:
             fb_status_1 = GPIO.input(FB_LOCK[0])
